@@ -1,0 +1,104 @@
+
+.box{   
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+.iconsmenu2{
+
+    font-size: '50px' ;
+    color:'#FFF' ;
+   /* background-color:'#FE1260' ;*/
+    border-radius:'50%' ;
+
+}
+
+.menutopo  {
+  /*background-color: #FE1260;  */
+    height: 50px;  
+    z-index: 0;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+   
+}
+.logo{    
+    width: 150px;     
+}
+.iconmenu{
+    position: absolute; 
+    z-index: 1;
+    left: 10px;
+    font-family: 'Roboto';
+}
+
+.cabecalho {
+
+    height: 170px; 
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.textogrande{
+    padding-top: 2px;
+    margin-left: 30px;
+    font-family: 'Roboto';
+    font-size:22px;
+    color: #fff;   
+
+}
+
+.textopequeno{
+    padding-top: 5px;
+    margin-left: 30px;
+    font-family: 'Roboto';
+    font-size:10px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.pedidosprodutos{
+    display: flex;
+    flex-direction: row ;  
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 30px;    
+   height: 100px;
+   color: #545c52;
+   font-size: 15px;
+   font-family: 'Roboto';
+
+}
+
+.iconsmenu{
+    display: flex;
+    flex-direction: column;
+   padding-top: 40px;     
+
+}
+
+.titulomenu{
+    font-family: 'Roboto';  
+    text-decoration: none;   
+    
+}
+.red{
+    color:red
+}
+
+.linklojinha{
+    text-transform: 'none';
+    background-color: '#FFF';
+    border-radius: '35px';
+     margin-left: '25px';
+     font-size: '10px';                        
+    font-weight: 'bold';
+     height: '50px';
+     margin-bottom: '10px';
+     box-shadow: '1.5px 1px 2px #0000002e'
+}
