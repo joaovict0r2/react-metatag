@@ -3,8 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {useCount} from '../context/Control'
 
-export default function Home() {
-
+export default function Home(props) {
+  console.log(props.host)
 
   const { count } = useCount();
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      teste lojinha next
+      teste 
       
 
 
@@ -24,4 +24,14 @@ export default function Home() {
       
     </div>
   )
+}
+
+export const getServerSideProps = async (context) => {
+  const host = context.req.headers.host
+
+  return {
+    props: {
+      host
+    }
+  }
 }
