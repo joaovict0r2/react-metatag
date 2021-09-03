@@ -4,8 +4,11 @@ import styles from '../styles/Home.module.css'
 import {useCount} from '../context/Control'
 
 export default function Home(props) {
-  console.log(props.host)
+  
+  const str = props.host.split('.')
 
+  console.log(str)
+  
   const { count } = useCount();
   return (
     <div className={styles.container}>
